@@ -28,7 +28,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: java-app
-          path: '${{ github.workspace }}/web/build/libs/*.jar'
+          path: '${{ github.workspace }}/web/build/*.jar'
 
   deploy:
     runs-on: windows-latest
